@@ -8,7 +8,7 @@ const AllTheBooks = () => {
     <Container className="p-0">
       <Row>
         {fantasy.map((book) => (
-          <Col xs={12} md={6} lg={3} className="my-2">
+          <Col xs={12} md={6} lg={3} className="my-2" key={book.asin}>
             <Card>
               <Card.Img
                 variant="top"

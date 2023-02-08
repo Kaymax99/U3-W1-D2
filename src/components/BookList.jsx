@@ -1,7 +1,6 @@
-import { Container, Form, Row } from "react-bootstrap";
-import { SingleBook } from "./SingleBook";
-import fantasy from "../data/fantasy.json";
 import { Component } from "react";
+import { Container, Form, Row } from "react-bootstrap";
+import SingleBook from "./SingleBook";
 
 class BookList extends Component {
   state = {
@@ -26,7 +25,7 @@ class BookList extends Component {
             />
           </Form.Group>
           <Row>
-            {fantasy
+            {this.props.props
               .filter((e) =>
                 e.title.toLowerCase().includes(this.state.search.toLowerCase())
               )

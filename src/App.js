@@ -6,13 +6,14 @@ import Welcome from "./components/Welcome";
 /* import AllTheBooks from "./components/AllTheBooks"; */
 import MyFooter from "./components/MyFooter.jsx";
 import BookList from "./components/BookList";
+import fantasy from "./data/fantasy.json";
 
 function App() {
   return (
     <>
       <MyNav />
       <Welcome />
-      <BookList />
+      <BookList props={fantasy} />
       <MyFooter />
     </>
   );

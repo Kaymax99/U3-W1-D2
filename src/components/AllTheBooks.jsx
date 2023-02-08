@@ -1,6 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import { Col, Container, Row, Button, Card } from "react-bootstrap";
 import fantasy from "../data/fantasy.json";
 
 const AllTheBooks = () => {
@@ -33,24 +31,3 @@ const AllTheBooks = () => {
 };
 
 export default AllTheBooks;
-
-/*  const AllTheBooks = () => {
-  return (
-    <Container className="d-flex flex-wrap justify-content-center">
-      {fantasy.map((book) => (
-        <Card className="m-3">
-          <Card.Img
-            variant="top"
-            src={book.img}
-            style={{ aspectRatio: 1 / 1.5 }}
-          />
-          <Card.Body>
-            <Card.Title>{book.title}</Card.Title>
-            <Card.Text>{book.price}€</Card.Text>
-            <Button variant="primary">Buy Now!</Button>
-          </Card.Body>
-        </Card>
-      ))}
-    </Container>
-  );
-};*/

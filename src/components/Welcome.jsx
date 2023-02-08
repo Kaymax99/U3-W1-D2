@@ -8,7 +8,7 @@ const Welcome = () => (
         Here you can access the vast library of books that were passed down
         Doges through the centuries.
       </p>
-      <button class="btn btn-primary btn-lg">Get Started!</button>
+      <button className="btn btn-primary btn-lg">Get Started!</button>
     </Container>
   </div>
 );

@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Form, Button, Col, NavDropdown } from "react-bootstrap";
+import { Form, Button, Col } from "react-bootstrap";
 
 class AddComment extends Component {
   state = {
